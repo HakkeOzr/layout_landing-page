@@ -1,0 +1,52 @@
+.about-us {
+  background-color: #FCFAEF;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.about-us__inner {
+  @include content-padding-inline;
+  @include page-grid;
+}
+
+.about-us__title {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+.about-us__content {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 4 / 7;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+.about-us__description {
+    margin: 0;
+    line-height: 140%;
+  }
+
+
+.about-us__image {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.about-us__img {
+  width:100%;
+  height: 392px;
+  object-fit: cover;
+}
+
