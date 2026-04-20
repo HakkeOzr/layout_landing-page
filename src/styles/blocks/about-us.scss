@@ -1,15 +1,18 @@
 .about-us {
-  background-color: #FCFAEF;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-}
+  background-color: #fcfaef;
 
-.about-us__inner {
-  @include content-padding-inline;
-  @include page-grid;
-}
+  &__inner {
+    @include page-grid;
+    @include content-padding-inline;
 
-.about-us__title {
+    padding-block: 48px;
+
+    @include on-tablet {
+      padding-block: 120px;
+    }
+  }
+
+  &__title {
     grid-column: 1 / -1;
 
     @include on-tablet {
@@ -21,7 +24,7 @@
     }
   }
 
-.about-us__content {
+  &__content {
     grid-column: 1 / -1;
 
     @include on-tablet {
@@ -33,20 +36,14 @@
     }
   }
 
-.about-us__description {
+  &__description {
     margin: 0;
     line-height: 140%;
   }
 
-
-.about-us__image {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  &__img {
+    width: 100%;
+    height: 392px;
+    object-fit: cover;
+  }
 }
-
-.about-us__img {
-  width:100%;
-  height: 392px;
-  object-fit: cover;
-}
-

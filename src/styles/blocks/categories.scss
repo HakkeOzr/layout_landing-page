@@ -13,7 +13,7 @@
   &__photos {
     @include page-grid;
 
-      margin-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   &__link {
@@ -65,5 +65,20 @@
   color: $btn-color;
   font-family: Manrope, sans-serif;
   font-weight: 700;
-}
 
+  grid-column: 1 / -1;
+
+  @include on-desktop {
+    grid-column: 1 / 5;
+  }
+
+  &:hover {
+    background: $price-color;
+    border: 1px solid $price-color;
+  }
+
+  &:active {
+    background: $btn-color-active;
+    border: 1px solid $btn-color-active;
+  }
+}

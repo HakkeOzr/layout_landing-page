@@ -31,7 +31,9 @@
 @mixin hover($property, $toValue) {
   transition: #{$property} $effectDuration;
 
-  &:hover { #{$property}: $toValue }
+  &:hover {
+    #{$property}: $toValue;
+  }
 }
 
 @mixin page-grid {

@@ -1,10 +1,9 @@
 .header {
-// display: none !important;
+  // display: none !important;
 
   background-size: cover;
   background-image: url(img/header-bg.png);
   background-position: center;
-
 
   &__content {
     height: 100vh;
@@ -21,12 +20,12 @@
     font-size: 36px;
     line-height: 100%;
     letter-spacing: 0;
-    color: #FFF;
+    color: #fff;
 
     @include on-tablet {
       font-size: 48px;
     }
-}
+  }
 
   &__bottom {
     padding-bottom: 40px;
@@ -35,6 +34,4 @@
       padding-bottom: 64px;
     }
   }
-
 }
-
