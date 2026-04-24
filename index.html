@@ -158,7 +158,7 @@
                   <a href="#" class="category__link category__link--wide">
                     <img
                     class="category__photo"
-                    src="src/styles/img/img-1.png"
+                    src="src/styles/img/1-10x.png"
                     alt="Portable speakers"
                     >
                   </a>
@@ -166,7 +166,7 @@
                   <a href="#" class="category__link category__link--square">
                     <img
                     class="category__photo"
-                    src="src/styles/img/img-2.png"
+                    src="src/styles/img/2-10x.png"
                     alt="Portable speakers"
                     >
                   </a>
@@ -180,7 +180,7 @@
                   <a href="#" class="category__link category__link--wide">
                     <img
                     class="category__photo"
-                    src="src/styles/img/img-3.png"
+                    src="src/styles/img/3-10x.png"
                     alt="Earphones"
                     >
                   </a>
@@ -188,7 +188,7 @@
                   <a href="#" class="category__link category__link--square">
                     <img
                     class="category__photo"
-                    src="src/styles/img/img-4.png"
+                    src="src/styles/img/4-10x.png"
                     alt="Earphones"
                     >
                   </a>
@@ -202,7 +202,7 @@
                   <a href="#" class="category__link category__link--wide">
                     <img
                     class="category__photo"
-                    src="src/styles/img/img-5.png"
+                    src="src/styles/img/5-10x.png"
                     alt="Smart Home"
                     >
                   </a>
@@ -210,7 +210,7 @@
                   <a href="#" class="category__link category__link--square">
                     <img
                     class="category__photo"
-                    src="src/styles/img/img-6.png"
+                    src="src/styles/img/6-10x.png"
                     alt="Smart Home"
                     >
                   </a>
@@ -262,7 +262,8 @@
             Contact us
             </h2>
 
-            <form method="post" action="#">
+            <form method="post" action="#"
+            onsubmit="this.reset(); return false;">
               <div class="contacts__field">
                 <label class="visually-hidden" for="name"> Name </label>
                 <input class="contacts__control"
@@ -312,10 +313,16 @@
 
               <div class="contacts__item">
                 <h4 class="contacts__item-title">Address</h4>
-                <address class="contacts__address">400 First Ave.
-                  <br>Suite 700
-                  <br>Minneapolis, MN 55401
-                </address>
+                <a
+                 class="contacts__link"
+                 href="https://maps.google.com/?q=400+First+Ave+Suite+700+Minneapolis+MN+55401"
+                 target="_blank"
+                 >
+                  <address class="contacts__address">400 First Ave.
+                    <br>Suite 700
+                    <br>Minneapolis, MN 55401
+                  </address>
+                </a>
               </div>
             </div>
 

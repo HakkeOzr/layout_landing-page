@@ -48,6 +48,7 @@
 
   &__message {
     min-height: 148px;
+    resize: none;
   }
 
   &__btn {
@@ -103,7 +104,6 @@
   &__link {
     text-decoration: none;
     color: inherit;
-    pointer-events: none;
   }
 
   &__address {
