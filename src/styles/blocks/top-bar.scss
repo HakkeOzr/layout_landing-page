@@ -27,4 +27,24 @@
 
     @include hover(transform, scale(1.2));
   }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  &__phone-number {
+    display: none;
+
+    @include on-desktop {
+      .top-bar__phone:hover & {
+        display: block;
+      }
+    }
+  }
 }
